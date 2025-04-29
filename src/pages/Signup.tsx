@@ -72,7 +72,7 @@ const Signup = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                  placeholder="John Doe"
+                  placeholder="Enter Your Name"
                 />
               </div>
             </div>
@@ -94,7 +94,7 @@ const Signup = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                  placeholder="john@example.com"
+                  placeholder="Enter Your Email"
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ const Signup = () => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                  placeholder="(555) 123-4567"
+                  placeholder="+91 00000 00000"
                 />
               </div>
             </div>
