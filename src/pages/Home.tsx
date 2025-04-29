@@ -121,7 +121,7 @@ const Home = () => {
                   <span className="text-teal-600 font-bold text-lg">JD</span>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold text-gray-800">John Davis</h4>
+                  <h4 className="font-bold text-gray-800">Yogu Boy</h4>
                   <div className="flex text-yellow-400">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg key={star} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -142,7 +142,7 @@ const Home = () => {
                   <span className="text-teal-600 font-bold text-lg">SW</span>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold text-gray-800">Sarah Wilson</h4>
+                  <h4 className="font-bold text-gray-800">Dhiraj Pandu</h4>
                   <div className="flex text-yellow-400">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg key={star} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -163,7 +163,7 @@ const Home = () => {
                   <span className="text-teal-600 font-bold text-lg">RP</span>
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-bold text-gray-800">Robert Patel</h4>
+                  <h4 className="font-bold text-gray-800">Arnav Kalia</h4>
                   <div className="flex text-yellow-400">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg key={star} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
