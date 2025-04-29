@@ -6,6 +6,8 @@ import { useAuth } from '../../hooks/useAuth';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isAuthenticated, user, logout } = useAuth();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -27,7 +29,7 @@ const Navbar = () => {
               <span className="text-2xl font-bold text-teal-500">DocBook</span>
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/" className="px-3 py-2 text-gray-700 hover:text-teal-500 transition">
@@ -36,33 +38,46 @@ const Navbar = () => {
             <Link to="/doctors" className="px-3 py-2 text-gray-700 hover:text-teal-500 transition">
               Doctors
             </Link>
-            
+
             {isAuthenticated ? (
               <div className="flex items-center ml-4">
                 <Link to="/dashboard" className="px-3 py-2 text-gray-700 hover:text-teal-500 transition">
                   My Appointments
                 </Link>
-                <div className="relative ml-3 group">
+                <div className="relative ml-3">
                   <button
+                    onClick={() => setIsDropdownOpen((prev) => !prev)}
                     className="flex items-center text-gray-700 hover:text-teal-500 transition"
                   >
                     <span className="mr-2">{user?.name}</span>
                     <User size={20} />
                   </button>
-                  <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
-                    <div className="py-1">
-                      <Link to="/dashboard" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                        Dashboard
-                      </Link>
-                      <button
-                        onClick={handleLogout}
-                        className="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        Logout
-                      </button>
+
+                  {isDropdownOpen && (
+                    <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
+                      <div className="py-1">
+                        <Link
+                          to="/dashboard"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() => setIsDropdownOpen(false)}
+                        >
+                          Dashboard
+                        </Link>
+                        <button
+                          onClick={() => {
+                            handleLogout();
+                            setIsDropdownOpen(false);
+                          }}
+                          className="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Logout
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
+
+
               </div>
             ) : (
               <div className="flex space-x-2">
@@ -81,7 +96,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="flex items-center md:hidden">
             <button
@@ -93,7 +108,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden">
@@ -112,7 +127,7 @@ const Navbar = () => {
             >
               Doctors
             </Link>
-            
+
             {isAuthenticated ? (
               <>
                 <Link
