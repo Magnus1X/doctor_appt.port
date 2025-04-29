@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin ,Github} from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,13 +17,13 @@ const Footer = () => {
               <a href="#" className="text-gray-300 hover:text-teal-400 transition">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-teal-400 transition">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-teal-400 transition">
+              <a href="https://www.instagram.com/saurav.jadhab/" className="text-gray-300 hover:text-teal-400 transition">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-teal-400 transition">
+              <a href="https://github.com/Magnus1X" className="text-gray-300 hover:text-teal-400 transition">
+                <Github size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/saurav-kumar-b7b87b338/" className="text-gray-300 hover:text-teal-400 transition">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -65,11 +65,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 mt-1 text-teal-400" />
-                <span className="text-gray-300">123 Medical Center Dr, Health City, HC 12345</span>
+                <span className="text-gray-300">123,Moon,Near Earth,Solar System</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-teal-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91 00000 00000</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-teal-400" />
