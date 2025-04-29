@@ -118,7 +118,7 @@ const Home = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-teal-100 flex items-center justify-center">
-                  <span className="text-teal-600 font-bold text-lg">JD</span>
+                  <span className="text-teal-600 font-bold text-lg">YB</span>
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800">Yogu Boy</h4>
@@ -139,7 +139,7 @@ const Home = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-teal-100 flex items-center justify-center">
-                  <span className="text-teal-600 font-bold text-lg">SW</span>
+                  <span className="text-teal-600 font-bold text-lg">DP</span>
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800">Dhiraj Pandu</h4>
@@ -160,7 +160,7 @@ const Home = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-teal-100 flex items-center justify-center">
-                  <span className="text-teal-600 font-bold text-lg">RP</span>
+                  <span className="text-teal-600 font-bold text-lg">AK</span>
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800">Arnav Kalia</h4>
